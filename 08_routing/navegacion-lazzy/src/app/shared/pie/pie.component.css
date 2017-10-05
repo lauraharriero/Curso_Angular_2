@@ -1,0 +1,11 @@
+footer {
+    position: fixed;
+    bottom : 0;
+    width: 100%;
+    border-top:  1px rgb(71, 11, 168) solid
+}
+p {
+    text-align: center;
+    font-size: 1.3em;
+    color : rgb(124, 27, 204);
+}

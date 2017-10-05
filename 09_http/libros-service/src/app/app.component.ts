@@ -10,13 +10,13 @@ export class AppComponent {
 
   private books: string[] = [];
 
-  constructor(private service: BooksService) { }
+  constructor(private booksService: BooksService) { }
 
   search(title: string) {
 
     this.books = [];
 
-    this.service.getBooks(title).subscribe(
+    this.booksService.getBooks(title).subscribe(
       books => this.books = books,
       error => console.error(error)
     );
