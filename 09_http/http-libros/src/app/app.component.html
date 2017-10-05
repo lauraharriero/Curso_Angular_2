@@ -1,0 +1,9 @@
+<h1>Google Books</h1>
+<!-- #: Angular 2 templating system 
+    which declares dom elements as variables.-->
+<input #title type="text">
+<button (click)="search(title.value); title.value=''">
+    Buscar
+</button>
+
+<p *ngFor="let book of aBooks">{{book}}</p>
